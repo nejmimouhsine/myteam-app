@@ -8,7 +8,7 @@
     overflow: hidden;
     position: relative;
 
-    &_container { display: flex; justify-content: space-between; }
+    &_container { display: flex; justify-content: space-between; height: 60%; }
 
     &_hero {
         width: 50%;

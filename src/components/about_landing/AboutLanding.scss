@@ -1,0 +1,28 @@
+.about {
+    &_hero {
+        width: 30%;
+        & h2 { font-size: 4rem; }
+    }
+
+    &_feature {
+        width: 70%;
+        & p {
+            max-width: 90%;
+        }
+    }
+
+    &_pattern {
+        position: absolute;
+        right: -100px;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .about {
+        &_hero, &_feature { width: 100%; }
+        &_feature {
+            & p { max-width: 100%; }
+        }
+    }
+}

@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import AboutLanding from '../components/about_landing/AboutLanding';
 
 const About = () => {
     return (
-        <div className='about'>
-            About Page
-        </div>
+        <Fragment>
+            <AboutLanding />
+        </Fragment>
     )
 }
 
