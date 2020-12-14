@@ -24,7 +24,7 @@ const Features = () => {
                             </div>
                         ))}
                     </div>
-                    <img src={HomePattern} alt='' className='feat_pattern' />
+                    <img src={HomePattern} alt='pattern' className='feat_pattern' />
                 </div>
             </div>
         </section>

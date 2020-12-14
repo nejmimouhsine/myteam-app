@@ -1,6 +1,6 @@
 .btn {
     width: 150px;
-    height: 45px;
+    height: 60px;
     font-size: 18px;
     font-weight: 600;
     background: transparent;
@@ -10,11 +10,23 @@
 
     &_white {
         border: 1px solid #fff;
-        transition: all .3s;
+        transition: all .5s;
         color: #fff;
 
         &:hover {
-            background: #F67E7E;
+            background: #fff;
+            a { color: #000; }
+        }
+    }
+
+    &_green {
+        border: 2px solid #012F34;
+        transition: all .5s;
+        a { color: #012F34; }
+
+        &:hover {
+            background: #012F34;
+            a { color: #fff; }
         }
     }
 

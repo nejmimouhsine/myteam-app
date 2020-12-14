@@ -58,3 +58,20 @@
         bottom: 0;
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    .testimonials {
+        height: 1200px;
+        &_persons {
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .testimonials {
+        & h2 { font-size: 30px; margin-bottom: 20px; }
+        &_person { margin-bottom: 30px; }
+        &_pattern { display: none; }
+    }
+}

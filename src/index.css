@@ -24,6 +24,10 @@ a {
 
 .divide_line.lightred {background: #F67E7E;}
 
+@media only screen and (max-width: 1200px) {
+    .divide_line { display: none; }
+}
+
 @media only screen and (min-width: 1000px) {
     .container {
         width: 80%;

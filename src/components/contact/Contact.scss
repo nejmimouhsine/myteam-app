@@ -11,14 +11,27 @@
         display: flex;
         justify-content: space-between;
 
-        & h2 {
-            font-size: 40px;
-        }
+        & h2 { font-size: 40px; }
     }
 
     &_pattern {
         position: absolute;
         left: 0;
         bottom: -30px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact {
+        &_pattern { display: none; }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact {
+        &_container {
+            display: block;
+            & h2 { font-size: 25px; margin-bottom: 20px; }
+        }
     }
 }

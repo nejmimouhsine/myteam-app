@@ -8,9 +8,9 @@ import {
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
-import Homepage from './pages/homepage/Homepage';
-import About from './pages/about/About';
-import Contact from './pages/contact/Contact';
+import Homepage from './pages/Homepage';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
     return (
