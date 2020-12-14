@@ -1,0 +1,60 @@
+.testimonials {
+    height: 700px;
+    width: 100%;
+    background: #004047;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+
+    & h2 {
+        font-size: 45px;
+        font-weight: 700;
+        margin-bottom: 100px;
+        & span { color: #79C8C7; }
+    }
+
+    &_persons {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 2rem;
+        -webkit-column-gap: 2rem;
+        column-gap: 2rem;
+    }
+
+    &_person {
+        & p {
+            font-weight: 500;
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
+        & h4 {
+            color: #79C8C7;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        & h5 {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    }
+
+    &_avatar {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #79C8C7;
+        border-radius: 50%;
+    }
+
+    &_pattern {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}

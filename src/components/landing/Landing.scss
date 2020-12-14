@@ -1,0 +1,48 @@
+.landing {
+    width: 100%;
+    height: 550px;
+    background: #014E56;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    &_container { display: flex; justify-content: space-between; }
+
+    &_hero {
+        width: 50%;
+        & h1 {
+            font-size: 6.25rem;
+            font-weight: 800;
+            & span { color: #F67E7E; }
+        }
+    }
+
+    &_feature {
+        width: 50%;
+        padding-top: 30px;
+        padding-left: 50px;
+        & p {
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1.7;
+            max-width: 350px;
+            transform: translateY(100px);
+        }
+    }
+
+    &_pattern, &_patternleft { position: absolute; }
+
+    &_pattern {
+        left: -110px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &_patternleft {
+        right: 20%;
+        top: 85%;
+    }
+}
+

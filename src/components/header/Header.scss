@@ -1,0 +1,33 @@
+.header {
+    height: 150px;
+    background: #014E56;
+    color: #fff;
+    overflow: hidden;
+
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_nav {
+        display: flex;
+        align-items: center;
+
+        & h3 {
+            margin-right: 50px;
+            font-size: 40px;
+        }
+
+        & ul { display: flex; }
+    }
+
+    &_link {
+        font-size: 18px;
+        font-weight: 600;
+        transition: all .3s;
+        margin-right: 40px;
+        &:hover { color: #F67E7E; }
+    }
+}

@@ -1,0 +1,24 @@
+.contact {
+    height: 200px;
+    background: #F67E7E;
+    color: #012F34;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+
+        & h2 {
+            font-size: 40px;
+        }
+    }
+
+    &_pattern {
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+    }
+}
