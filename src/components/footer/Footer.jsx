@@ -15,7 +15,7 @@ const Footer = () => {
         <footer className='footer'>
             <div className='container footer_container'>
                 <div className='footer_left'>
-                    <img src={Logo} alt='myteam logo' />
+                    <img src={Logo} alt='myteam logo' className='footer_logo' />
                     <ul>
                         <li><Link to='/'>home</Link></li>
                         <li><Link to='/about'>about</Link></li>
