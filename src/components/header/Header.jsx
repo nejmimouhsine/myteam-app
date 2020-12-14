@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../button/Button';
 import './Header.scss';
 
+import logo from '../../assets/img/logo.svg';
+import headerToggle from '../../assets/img/icon-hamburger.svg';
+import headerClose from '../../assets/img/icon-close.svg';
+
 const Header = () => {
+    const [toggle, setToggle] = useState(false);
+    const handleToggle = () => setToggle(!toggle);
+
     return (
         <header className='header'>
-            <div className='container'>
+            <div className='container header_container'>
+                <div className='header_logo'>
+                    <img src={logo} alt='myteam logo' />
+                </div>
                 <div className='header_nav'>
-                    <h3>myteam</h3>
                     <ul>
                         <li><Link className='header_link' to='/'>home</Link></li>
                         <li><Link className='header_link' to='/about'>about</Link></li>
@@ -17,7 +26,17 @@ const Header = () => {
                 <div className='header_btn'>
                     <Button className='btn btn_white' />
                 </div>
+                <div className='header_toggle'>
+                    <img src={ !toggle ? headerToggle : headerClose } className={toggle ? 'header_menu' : null} alt='myteam toggle' onClick={handleToggle} />
+                </div>
             </div>
+            <nav className={ toggle ? 'header_aside active' : 'header_aside' }>
+                <ul>
+                    <li><Link className='header_link' to='/'>home</Link></li>
+                    <li><Link className='header_link' to='/about'>about</Link></li>
+                </ul>
+                <Button className='btn btn_white' />
+            </nav>
         </header>
     )
 }

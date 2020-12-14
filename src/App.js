@@ -7,6 +7,8 @@ import {
 
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+import ContactComp from './components/contact/Contact';
+
 
 import Homepage from './pages/Homepage';
 import About from './pages/About';
@@ -22,6 +24,7 @@ function App() {
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />
                 </Switch>
+                <ContactComp />
                 <Footer />
             </div>
         </Router>

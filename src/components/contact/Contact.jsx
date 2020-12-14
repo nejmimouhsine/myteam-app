@@ -3,7 +3,7 @@ import './Contact.scss';
 import ContactPattern from '../../assets/img/bg-pattern-home-6-about-5.svg';
 import Button from '../button/Button';
 
-const Contact = () => {
+const ContactComp = () => {
     return (
         <section className='contact'>
             <div className='container contact_container'>
@@ -15,4 +15,4 @@ const Contact = () => {
     )
 }
 
-export default Contact;
+export default ContactComp;
