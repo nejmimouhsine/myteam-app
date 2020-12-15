@@ -1,0 +1,27 @@
+.contactAsk {
+    & h2 {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+    & h3 {
+        font-size: 30px;
+        color: #F67E7E;
+    }
+
+    &_features {
+        margin-top: 50px;
+    }
+
+    &_feat {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        & h4 { font-size: 18px; font-weight: 600; margin-left: 10px; }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contactAsk {
+        &_feat { justify-content: center; }
+    }
+}

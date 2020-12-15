@@ -24,6 +24,35 @@ a {
 
 .divide_line.lightred {background: #F67E7E;}
 
+.contactpage {
+    width: 100%;
+    height: 700px;
+    background: #014E56;
+    color: #fff;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.contactpage .contactpage_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    margin-top: 50px;
+}
+
+.contactpage_pattern, .contactpage_patternleft { position: absolute; }
+
+.contactpage_patternleft {
+    top: 0;
+    left: -100px;
+}
+
+.contactpage_pattern {
+    right: -100px;
+    bottom: 0;
+}
+
 @media only screen and (max-width: 1200px) {
     .divide_line { display: none; }
 }
@@ -40,4 +69,10 @@ a {
         width: 90%;
         margin: 0 auto;
     }
+    .contactpage { height: 1000px; }
+    .contactpage .contactpage_container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .contactpage_pattern, .contactpage_patternleft { display: none; }
 }
